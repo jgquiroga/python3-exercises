@@ -1,0 +1,18 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            // "console": "integratedTerminal", // Con este código va a la terminal 
+            "console": "internalConsole",       // Con este código va a la consola de debug directamente. (No permite input)
+            "cwd" : "${fileDirname}",
+            "stopOnEntry": true
+        }
+    ]
+}
