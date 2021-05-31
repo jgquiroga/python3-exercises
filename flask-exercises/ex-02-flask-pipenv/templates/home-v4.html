@@ -1,8 +1,12 @@
-<h1>URL Shortener</h1>
+{% extends 'base.html' %}
 
-{% for message in get_flashed_messages() %}
-    <h2>{{ message }}</h2>
-{% endfor %}
+{% block title %}
+URL Shortener
+{% endblock %}
+
+{% block main %}
+
+<h1>URL Shortener</h1>
 
 <form action="your-url" method="POST">
     <label for="url">Website URL</label>
@@ -34,3 +38,5 @@
         {% endfor %}
     </ul>
 {% endif %}
+
+{% endblock %}
