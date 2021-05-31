@@ -128,4 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 flask-exercises/ex-02-flask-pipenv/urls.json
-flask-exercises/ex-02-flask-pipenv/uploads/
+flask-exercises/ex-02-flask-pipenv/static/user_files/
