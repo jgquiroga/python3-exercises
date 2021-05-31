@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 # TODO: Add this information in a Readme file
@@ -19,7 +19,7 @@ app = Flask(__name__)
 #
 
 @app.route("/")
-def hello():
+def home():
     return render_template('home-v3.html')
 
 @app.route("/your-url", methods = ['GET', 'POST'])
@@ -29,7 +29,8 @@ def your_url():
         # form is for post
         return render_template('your_url.html', code = request.form['code'] )
     else:
-        return 'This is not valid'
+        # url_for receives the url of an action
+        return redirect(url_for('home'))
 
 
 if __name__ == "__main__":
